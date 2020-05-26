@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="form.css" >
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+         <script src="form.js"></script>
+
+</head>
+
+
+        <body style="background-color:#1D1D23">
+        <div class="imagebg"></div>
+          <div class="header">
+
+          Astronomy
+          </div>
+
+          <nav class="navbar navbar-expand-lg navbar-dark " style=" background-color:  #333;">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                 <li class="nav-item ">
+                   <a class="nav-link " href="index.html">
+                     Home
+                     <span class="sr-only">(current)
+                     </span>
+                   </a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link" href="Planets and their details.html" >
+                  Our Solarsystem
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="Planets and their details.html"> Solar System Profile</a>
+                     <a class="dropdown-item" href="Planets and their details.html">The Objects in our Solarsystem</a>
+                     <a class="dropdown-item" href="Planets and their details.html">How the Objects in the Solarsystem Interact</a>
+                     <a class="dropdown-item" href="Planets and their details.html">The size of the Solarsystem</a>
+                     <a class="dropdown-item" href="Planets and their details.html">The Formation of the Solarsystem</a>
+                 </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link " href="stars.html" >
+                  Stars
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a href="stars.html" class="dropdown-item">How Stars Form</a>
+                     <a href="stars.html" class="dropdown-item">How Stars Die</a>
+                     <a href="stars.html" class="dropdown-item">Types of Stars</a>
+                     <a href="stars.html" class="dropdown-item">List of some known Stars</a>
+                     <a href="stars.html" class="dropdown-item">Some fascinating facts about Star</a> </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link " href="galaxies.html" id="navbarDropdownMenuLink" >
+                    Galaxies
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="galaxies.html">What is Galaxy?</a>
+                     <a class="dropdown-item" href="galaxies.html">How do we know how many galaxies are in our universe?</a>
+                     <a class="dropdown-item" href="galaxies.html">Types of galaxies</a>
+                     <a class="dropdown-item" href="galaxies.html">Galactic Research</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link " href="bigbang.html" id="navbarDropdownMenuLink" >
+                     Big Bang
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="bigbang.html">What is the Big Bang theory?</a>
+                     <a class="dropdown-item" href="bigbang.html"> The first second, and the birth of light</a>
+                     <a class="dropdown-item" href="bigbang.html">Determining the age of the Universe</a>
+                      <a class="dropdown-item" href="bigbang.html">Gravitational waves controversy</a>
+                      <a class="dropdown-item" href="bigbang.html">Faster inflation and Multiverses</a>
+                   </div>
+                 </li>
+                 <li class="nav-item-active ">
+                   <a class="nav-link " href="formpage.html">
+                     Contact
+                     <span class="sr-only">(current)
+                     </span>
+                   </a>
+                 </li>
+               </ul>
+             </div>
+        </nav>
+     <main>
+  <header>
+    <br  >Contact</br>
+  </header>
+
+       <h3 style="text-align: center; font-weight: bold;color:#9496B4;">Do you think something could be done better or did you found a bug? Write to me:</h3>
+       <div class="row " style="margin-top: 50px">
+           <div class="col-md-6 col-md-offset-3 form-container">
+
+
+               <form role="form" method="post" id="reused_form">
+                   <div class="row">
+                       <div class="col-sm-12 form-group">
+                       <label style="color:white">How do you rate your overall experience?</label>
+                       <p style="color:white">
+                           <label class="radio-inline">
+                           <input type="radio" name="experience" id="radio_experience" value="bad" >
+                           Bad
+                           </label>
+
+                           <label class="radio-inline">
+                           <input type="radio" name="experience" id="radio_experience" value="average" >
+                           Average
+                           </label>
+
+                           <label class="radio-inline">
+                           <input type="radio" name="experience" id="radio_experience" value="good" >
+                           Good
+                           </label>
+                       </p>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-sm-12 form-group">
+                           <label for="comments" style="color:white">
+                               Comments:</label>
+                           <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-sm-6 form-group">
+
+                           <input type="text" class="form-control" id="first name" name="name" placeholder="First name" required>
+                       </div>
+                       <div class="col-sm-6 form-group">
+
+                           <input type="text" class="form-control" id="last name" name="name" placeholder="Last name" required>
+                       </div>
+                       <div class="col-sm-6 form-group">
+                           <label for="email"style="color:white">
+                               Email address</label>
+                           <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+                       </div>
+                   </div>
+
+                               <div class="row">
+                       <div class="col-sm-12 form-group">
+                           <button type="submit" class="btn btn-lg btn-warning btn-block" >Post </button>
+                       </div>
+                   </div>
+
+               </form>
+               <div id="success_message" style="width:100%; height:100%; display:none; ">
+                   <h3>Posted your feedback successfully!</h3>
+               </div>
+               <div id="error_message"
+                       style="width:100%; height:100%; display:none; ">
+                           <h3>Error</h3>
+                           Sorry there was an error sending your form.
+
+               </div>
+           </div>
+       </div>
+ </main>
+
+
+<footer>Thank you for visiting</footer>
+        </html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+      <style>
+      body{
+      background-image: url('https://wallpaperset.com/w/full/c/1/7/36469.jpg');
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+      background-size:cover;
+       }
+      .header {
+      padding: 10px;
+      text-align: center;
+      background: #112a54;
+      color: white;
+      font-size: 55px;
+      }
+      .card-footer {text-align: center;
+      }
+      p{font-size:22px, }
+
+    .nav-item-active{background-color: #4CAF50;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-menu {display: block;}
+
+      @media(max-width:800px){
+                               p{font-size:15px }
+                             }
+
+
+          .w3-container{
+               background-color:#173665;
+               font-size:20px;text-align: left;
+               width:90%; margin-left:5%; margin-right:5%; margin-bottom: 10px;margin-top: 30px;
+               padding: 20px;
+               opacity: 0.9;
+                    border-radius: 20px;}
+
+
+      h1{font-weight: bold; text-shadow: 1px 1px 2px #EF500D;}
+    h2{font-weight: bold;color: white; text-align: center;padding: 10px;text-shadow: 1px 1px 2px #EF500D; }
+
+
+    .flip-box {margin-top: 30px;
+      background-color: black;
+      height: 500px;
+      border: 5px solid #f1f1f1;
+      perspective:1000px;  border-radius: 10px;
+       width:70%; margin-left:15%; margin-right:15%; margin-bottom: 30px;
+    }
+header{color: white;
+margin-top: -20px}
+    .flip-box-inner-1,.flip-box-inner-2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align:left;
+      width:90%; margin-left:5%; margin-right:5%; margin-top: 15px;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner-1 {
+      transform: rotateY(180deg);
+    }
+    .flip-box:hover .flip-box-inner-2{
+      transform: rotateX(180deg);
+    }
+
+    .flip-box-front, .flip-box-back-1,.flip-box-back-2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+      background-color: transparent;
+      color: black;
+    }
+    .flip-box-back-1 {
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-back-2 {
+      color: white;
+      transform: rotateX(180deg);
+    }
+        </style>
+</head>
+
+
+        <body style="background-color:#0F122D">
+
+          <div class="header">
+
+          Astronomy
+          </div>
+
+          <nav class="navbar navbar-expand-lg navbar-dark " style=" background-color:  #333;">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+             <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                 <li class="nav-item ">
+                   <a class="nav-link " href="index.html">
+                     Home
+                     <span class="sr-only">(current)
+                     </span>
+                   </a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link" href="Planets and their details.html" >
+                  Our Solarsystem
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="Planets and their details.html"> Solar System Profile</a>
+                     <a class="dropdown-item" href="Planets and their details.html">The Objects in our Solarsystem</a>
+                     <a class="dropdown-item" href="Planets and their details.html">How the Objects in the Solarsystem Interact</a>
+                     <a class="dropdown-item" href="Planets and their details.html">The size of the Solarsystem</a>
+                     <a class="dropdown-item" href="Planets and their details.html">The Formation of the Solarsystem</a>
+                 </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link " href="stars.html" >
+                  Stars
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a href="stars.html" class="dropdown-item">How Stars Form</a>
+                     <a href="stars.html" class="dropdown-item">How Stars Die</a>
+                     <a href="stars.html" class="dropdown-item">Types of Stars</a>
+                     <a href="stars.html" class="dropdown-item">List of some known Stars</a>
+                     <a href="stars.html" class="dropdown-item">Some fascinating facts about Star</a> </div>
+                 </li>
+                 <li class="nav-item-active dropdown">
+                   <a class="nav-link " href="galaxies.html" id="navbarDropdownMenuLink" >
+                    Galaxies
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="# What is Galaxy?">What is Galaxy?</a>
+                     <a class="dropdown-item" href="# How do we know how many galaxies are in our universe?">How do we know how many galaxies are in our universe?</a>
+                     <a class="dropdown-item" href="# Types of galaxies"> Types of galaxies</a>
+                     <a class="dropdown-item" href="# Galactic Research">Galactic Research</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link " href="bigbang.html" id="navbarDropdownMenuLink" >
+                     Big Bang
+                   </a>
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                     <a class="dropdown-item" href="bigbang.html">What is the Big Bang theory?</a>
+                     <a class="dropdown-item" href="bigbang.html"> The first second, and the birth of light</a>
+                     <a class="dropdown-item" href="bigbang.html">Determining the age of the Universe</a>
+                      <a class="dropdown-item" href="bigbang.html">Gravitational waves controversy</a>
+                      <a class="dropdown-item" href="bigbang.html">Faster inflation and Multiverses</a>
+                   </div>
+                 </li>
+                 <li class="nav-item ">
+                   <a class="nav-link " href="formpage.html">
+                     Contact
+                     <span class="sr-only">(current)
+                     </span>
+                   </a>
+                 </li>
+               </ul>
+             </div>
+        </nav>
+
+        <header style=" text-align: center;
+                         font-size: 35px; margin-top: 30px;
+                         font-weight: bold; text-decoration-color: white;
+                         color:white" class="site-header">
+        <div class="wrap">
+          <div class="title-area">
+            <div class="w3-center w3-animate-top">
+      The Galaxies
+
+
+      </div>
+      </div>
+      </div>
+    </header>
+        <main>
+            <div class="w3-container">
+               <h2 id="  What is Galaxy?">   What is Galaxy?</h2>
+                <img src=" http://www.thetimenow.com/img/astronomy/all/galaxy.png" alt="alt text" style="float: right" width="40%" alt="Responsive image">
+                 <p style="color:white">A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter. The word galaxy is derived from the Greek galaxias (γαλαξίας), literally "milky", a reference to the Milky Way. Galaxies range in size from dwarfs with just a few hundred million (10^8) stars to giants with one hundred trillion (10^14) stars, each orbiting its galaxy's center of mass.</p>
+           </div>
+
+           <div class="w3-container">
+              <h2 id=" How do we know how many galaxies are in our universe?">    How do we know how many galaxies are in our universe?</h2>
+               <img src=" https://cdn.zmescience.com/wp-content/uploads/2018/01/far-away-galaxy.jpg" alt="alt text" style="float: right" width="40%" alt="Responsive image">
+              <p style="color:white"><br> According to the best estimates of astronomers there are at least one hundred billion galaxies in the observable universe. They’ve counted the galaxies in a particular region, and multiplied this up to estimate the number for the whole universe. </br>
+              <br> Astronomers get to travel to some of the most remote places on Earth to use huge optical telescopes far away from light pollution in order to make observations. Optical telescopes have been used for astronomical observation since the time of Galileo, but the technology has moved on significantly since then.</br></p>
+         </div>
+
+<div class="w3-container" style="padding:10px">
+  <h2 id=" Types of galaxies">    Types of galaxies</h2>
+  <img src=" https://blogs.zooniverse.org/galaxyzoo/files/2010/05/HubbleTuningFork2w.jpg" alt="alt text" style="float: right" width="40%" alt="Responsive image">
+
+<p style="color:white">Before the 20th century, we didn't know that galaxies other than the Milky Way existed; earlier astronomers had classified them as
+ as “nebulae,” since they looked like fuzzy clouds. But in the 1920s, astronomer Edwin Hubble showed that the Andromeda “nebula”
+ was a galaxy in its own right. Since it is so far from us, it takes light from Andromeda more than 2.5 million years to bridge
+  the gap. Despite the immense distance, Andromeda is the closest large galaxy to our Milky Way, and it's bright enough in the
+  night sky that it's visible to the naked eye in the Northern Hemisphere.
+
+In 1936, Hubble debuted a way to classify galaxies, grouping them into four main types: spiral galaxies, lenticular galaxies,
+ elliptical galaxies, and irregular galaxies.</p>
+
+</div>
+
+
+ <div class="flip-box">
+   <div class="flip-box-inner-2">
+     <div class="flip-box-front">
+       <header>
+         <h2>Spiral Galaxy</h2>
+       </header>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/M101_hires_STScI-PRC2006-10a.jpg/800px-M101_hires_STScI-PRC2006-10a.jpg" alt="Responsive image" style="width:100%;height:75%;">
+       <footer style="color:white"> <h5>Pinwheel Galaxy (also known as Messier 101 or NGC 5457)</h5></footer>
+
+     </div>
+     <div class="flip-box-back-2">
+       <p style="font-size:18px" > More than two-thirds of all observed galaxies are spiral galaxies. They have a flat, spinning disk with a central bulge surrounded by spiral arms. The spinning motion reaches speeds of up to hundreds of kilometers/miles per second. This usually can cause matter in the disk to take on a distinctive spiral shape, like a cosmic pinwheel. The bulge located in the center is made up of older, dimmer stars, and is thought to usually contain a supermassive black hole.
+
+
+The disk of stars orbiting the bulge tends to separate into arms that circle the galaxy. These spiral arms contain a wealth of gas and dust, thus many young stars are birthed in these regions. These young stars shine very brightly before their quick demise. Spiral galaxies can be classified according to the tightness of their spiral, the lumpiness of their arms, and the overall size of their central bulge.
+
+The relative amounts of gas and dust contained within these galaxies can portray these differences. Andromeda is a perfect example of a spiral galaxy.</p1>
+
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-box">
+   <div class="flip-box-inner-1">
+     <div class="flip-box-front">
+       <header>
+         <h2>Barred Spiral Galaxies</h2>
+        </header>
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg/1024px-Hubble2005-01-barred-spiral-galaxy-NGC1300.jpg" alt="Responsive image" style="width:100%;height:75%;">
+ <footer style="color:white"> <h5>NGC 1300</h5></footer>
+     </div>
+     <div class="flip-box-back-1">
+       <p style="font-size:18px"> Barred spiral galaxies share the same features and functions as regular spiral galaxies, but they also have a bar of bright
+        stars that lie along the center of the bulge and extend into the disk. The bright bulge has very little activity here and
+        contains mostly older, red stars. The bar and arms have lots of activity, including star formation.  About one third of all spiral galaxies are barred spiral in shape.
+        The perfect example of a barred spiral galaxy is our own galaxy, the Milky Way. They are further divided into three categories:
+<ol style="font-size:14px">
+  <li>  Barred spiral galaxy type A – abbreviation SBa – they feature tightly bound arms.</li>
+  <li>  Barred spiral galaxy type B – abbreviation SBb – they feature both tightly and loosely bond arms.</li>
+  <li>  Barred spiral galaxy type C – abbreviation Sbc – they have loosely bound arms.</li>
+</ol>
+        Around two-thirds of spiral galaxies contain a bar structure through their center.</p>
+   </div>
+ </div>
+</div>
+
+ <div class="flip-box">
+   <div class="flip-box-inner-2">
+     <div class="flip-box-front">
+       <header>
+         <h2>Elliptical Galaxy</h2>
+        </header>
+
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hi-res.jpg/800px-M104_ngc4594_sombrero_galaxy_hi-res.jpg" alt="Responsive image" style="width:100%;height:75%;">
+
+<footer style="color:white"> <h5>Sombrero galaxy (M104)</h5></footer>   </div>
+     <div class="flip-box-back-2">
+       <p style="font-size:18px" >
+     Elliptical galaxies have an elongated spherical shape and lack a nucleus or bulge at the center. Although there is no nucleus, the galaxy is still brighter in the center and becomes less bright toward the outer edges of the galaxy.
+
+
+     Their light is dominated by older reddish stars. They appear to also lack spiral arms. The stars, gases and other materials are spread throughout an elliptical galaxy. Elliptical galaxies can be nearly round or long and cigar-shaped.
+
+     Though individual stars orbit the center of an elliptical galaxy, the orbits aren’t all in the same direction, as they appear in spirals. Therefore, ellipticals don’t appear to rotate in a systematic way
+
+     Theories suggest that a great deal of the mass in an elliptical galaxy is due to the presence of a central black hole. Elliptical galaxies have very little activity and contain mostly old stars of low mass, because there gasses and dust which is needed to form new stars, is quite lacking.
+
+
+     Elliptical galaxies vary in size, from small dwarf galaxies to enormous galaxies. An example of a giant elliptical galaxy is ESO 325-G004, while Leo I is a dwarf elliptical galaxy. An intermediate between the giant and dwarf elliptical galaxies are systems such as M32 and M110, they are companions of the Andromeda Galaxy.</p>
+     </div>
+   </div>
+ </div>
+
+ <div class="flip-box">
+   <div class="flip-box-inner-1">
+     <div class="flip-box-front">
+       <header>
+         <h2>Irregular Galaxy</h2>
+       </header>
+       <img src="https://nineplanets.org/wp-content/uploads/2019/12/Irregular-dwarf-galaxy.jpg" alt="Responsive image" style="width:100%;height:74%;">
+       <footer style="color:white"> <h5>The irregular dwarf galaxy PGC 16389 — seen here as a cloud of stars — covers its neighbouring galaxy APMBGC 252+125-117, which appears edge-on as a streak. </h5></footer>
+
+     </div>
+     <div class="flip-box-back-1">
+       <p style="font-size:18px"> A fourth type of galaxy is known as the irregular galaxy. Irregular galaxies have no definite shape, though they are in constant motion like all other galaxies. They have a chaotic appearance as they don’t seem to possess a nuclear bulge or traces of spiral arms.
+
+
+       Some irregular galaxies were once spiral or elliptical galaxies but were deformed by an uneven external gravitational force. Irregular galaxies may contain abundant amounts of gas and dust Irregular galaxies are commonly small, about one-tenth the mass of the Milky Way galaxy.
+
+       Until now, three major types of irregular galaxies have been established:</p>
+<ol style="font-size:14px">
+  <li>Irr I – they feature some structure but not enough to be placed into the Hubble sequence.</li>
+  <li>IIrr II – they do not appear to feature any structure.</li>
+  <li>DIrr III – dwarf irregular galaxy. They tend to have low metallicity and relatively high levels of gas. They are also believed to be similar to the earliest galaxies that populated the Universe.
+  </li>
+</ol>
+       <p style="font-size:18px"> Irregular galaxies can be distorted by the gravity of a larger neighbor, a good example of this are the Large and Small Magellanic Clouds, distorted by our Milky Way.
+       </p>
+    </div>
+   </div>
+ </div>
+
+ <div class="flip-box">
+   <div class="flip-box-inner-2">
+     <div class="flip-box-front">
+       <header>
+         <h2>Other types of Galaxies</h2>
+       </header>
+       <img src="https://live.staticflickr.com/827/42131755662_0fa3d6fb39_b.jpg" alt="Responsive image" style="width:80%;height:75%; margin-left:100px">
+       <footer style="color:white"> <h5>The Cartwheel Galaxy </h5></footer>
+
+  </div>
+     <div class="flip-box-back-2">
+       <p style="font-size:18px">
+       Some galaxies have a ring-like structure of stars and interstellar medium surrounding a bare core. It is believed that they take this shape when smaller galaxies pass through the core of spiral galaxies.
+
+
+       Lenticular galaxies are a type of galaxy that shares similarities with both spiral and elliptical galaxies. They possess ill-defined spiral arms with an elliptical halo of stars.
+
+       Some galaxies are classified as ultra-diffuse galaxies – they have extremely low densities. They may be as big as our Milky Way yet the visible star count typically is around 1%. This is attributed to a lack of star-forming gas.
+
+       On the other end, there are starburst galaxies that are characterized by dusty concentrations of gas and the appearance of newly formed stars. Usually, many of these stars are massive and result in supernova explosions that interact powerfully with the surrounding gas.
+
+
+       There are many other type of galaxies that exist or are discovered as you read this. With the advancement of technology, more and more distant or dim structures like galaxies can be observed and studied leading to an ever-growing classification.</p>
+
+     </div>
+   </div>
+ </div>
+
+ <div class="w3-container">
+<h2 id=" Galactic Research">   Galactic Research</h2>
+
+<p style="color:white">Edwin Hubble was the first person to figure out how to tell the distance of a galaxy. He used a type of pulsating star known as a Cepheid variable as a kind of galactic yardstick. Hubble noticed a correlation between the period required to complete one pulsation brightness and the amount of energy the star gives off. This was the first major breakthrough in galactic research. Hubble also discovered that there was a correlation between the red shift of a galaxy and its distance. This is known today as the Hubble constant. Today astronomers are able to measure the speed and distance of a galaxy by measuring the amount of redshift in its spectrum. We know that all galaxies are moving away from each other. The farther a galaxy is from us, the faster it is moving. To visualize this idea, imagine yourself driving on a highway at 50 miles an hour. The car in front of you is moving away from you at 50 miles an hour, which means that it is traveling at 100 miles an hour. Another car in front of the first car is moving away from it at 50 miles an hour. Though all three cars are moving away from each other at 50 miles per hour, the front car is actually moving away from you at 100 miles per hour. Since redshift shows the speed at which a galaxy is moving away from us, the greater the redshift, the faster the galaxy is moving and the farther it is from us. We now have new tools that are helping astronomers in their search for new galaxies. The Hubble space telescope has opened our eyes to sights never before seen by human eyes. The extreme clarity of Hubble allows astronomers to see fine details in nearby galaxies and to detect distant galaxies that were previously unknown. New tools currently under development will help us obtain a better understanding of the overall structure of the universe.
+</p>
+ </div>
+</main>
+<div class="card bg-dark text-white mb-3">
+<div class="card-header">
+Source:
+</div>
+<div class="card-body">
+<blockquote class="blockquote mb-0">
+  <p>
+    <a href="https://www.nationalgeographic.com/science/space/universe/galaxies/">National Geographic</a>,
+    <a href="https://nineplanets.org/type-of-galaxies/"> The Nine planets</a>,
+
+    <a href="https://en.wikipedia.org">Wikipedia</a>.</p>
+
+
+
+</blockquote>
+ </div>
+  </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        </body>
+    </html>

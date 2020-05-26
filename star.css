@@ -1,0 +1,39 @@
+.w3-container{
+      display:inline-flex;
+      flex-wrap: wrap;
+}
+ .w3-container>div{
+      background-color:black;
+      text-align: left;
+      margin:20px;
+       opacity: 0.85;
+      padding: 20px;
+        border-radius: 20px;
+       width:90%; margin-left:5%; margin-right:5%; margin-top: 10px;
+ }
+h1{text-align: center;font-weight: bold;color:white; text-shadow: 1px 3px 5px #EF500D;}
+h2{text-align: center;font-weight: bold;color:white;  text-shadow: 1px 1px 2px #EF500D; }
+h4{font-weight: bold; color:white; text-shadow: 5px 5px #558ABB;}
+
+
+.site-header{text-align: center;}
+
+
+.header {
+padding: 10px;
+text-align: center;
+background: #112a54;
+color: white;
+font-size: 55px;
+}
+.card-footer {text-align: center;
+}
+p{font-size:22px;color:white;  }
+
+
+@media(max-width:600px){
+                         p{font-size:15px;color:white;  }
+                       }
+
+                       /* Show the dropdown menu on hover */
+                       .dropdown:hover .dropdown-menu {display: block;}

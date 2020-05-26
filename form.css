@@ -1,0 +1,57 @@
+.header {
+padding: 10px;
+text-align: center;
+background: #112a54;
+color: white;
+font-size: 55px;
+
+}
+html,
+body {
+	height: 90%;
+}
+.imagebg{
+  background-image: url('https://wallpaperplay.com/walls/full/5/1/a/25054.jpg');
+  	background-repeat: no-repeat;
+
+  	background-size: cover;
+  	background-attachment: fixed;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	-webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0.4;
+    filter: alpha(opacity=60);}
+.row{margin-left: 100px}
+p{font-size:22px }
+
+.nav-item-active{background-color: #4CAF50;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {display: block;}
+
+@media(max-width:800px){
+                         p{font-size:15px }
+                       }
+header{font-weight: 350; color:white; font-size:45px;text-align: center;margin-top: 80px;}
+
+footer {
+padding: 20px;
+text-align: center;
+background: #383847;
+color: white;
+font-size: 25px;
+font-weight: bold;
+}
+
+
+.form-container
+{
+	background-color: inherit;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
