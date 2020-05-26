@@ -1,0 +1,14 @@
+$bgcolor: black;
+$textcolor: white;
+$fontsize: 22px;
+
+
+
+/* Use the variables */
+body {
+
+  color: $textcolor;
+  font-size: $fontsize;
+}
+.w3-container>div{
+     background-color:$bgcolor;}
